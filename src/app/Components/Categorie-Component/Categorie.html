@@ -1,0 +1,15 @@
+<h2>{{vm.title}}</h2>
+<table>
+    <head>
+        <tr>
+            <th>Id Categorie</th>
+            <th>Nom Categorie</th>
+        </tr>
+    </head>
+    <tbody>
+        <tr ng-repeat="item in vm.categorieData">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </tbody>
+</table>

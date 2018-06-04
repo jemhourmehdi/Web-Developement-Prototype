@@ -1,0 +1,19 @@
+<div class="article">
+<table>
+    <head>
+        <tr>
+             <th>Id </th>
+            <th>Nom article</th>
+            <th>Prix article</th>
+        </tr>
+    </head>
+    <tbody>
+        <tr ng-repeat="item in vm.articleData">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.prix}}</td>
+
+        </tr>
+    </tbody>
+</table>
+</div>

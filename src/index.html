@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AlMedinet">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+<body>
+<!-- Start your header -->
+<a ui-sref="article" ui-sref-active="active">Article</a>
+<a ui-sref="categorie" ui-sref-active="active">Categorie</a>
+<!-- End your header -->
+
+<!-- Start Content Section -->
+<ui-view autoscroll="true" autoscroll-body-top></ui-view>
+<!-- End Content Section -->
+
+<!-- Start Footer Section -->
+<section class="footer">
+    <footer class="al-footer">
+        <div class="al-footer-creator">
+            Created with <i class="fa fa-heart"></i> by <a class="al-button al-button-flat" href="https://www.facebook.com/profile.php?id=100003977380332">Jemhour Mehdi</a>
+            <ul class="al-footer-social">
+                <li> - Github : <a class="al-button" href="https://github.com/Al-medinet/"><i class="fa fa-github"></i>See My Projects</a></li>
+            </ul>
+        </div>
+    </footer>
+</section>
+<!-- End Footer Section -->
+
+<!-- script loading -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+
+<script src="assets/app/app.js"></script>
+</body>
+</html>
